@@ -1,43 +1,34 @@
 require "bundler/capistrano"
-# require "rvm/capistrano"
-
-set :default_environment, {
-    'PATH' => "/home/easander/.gems/bin:/usr/lib/ruby/gems/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games"
-}
+require "rvm/capistrano"
 
 ssh_options[:forward_agent] = true
 set :ssh_options, { :forward_agent => true }
-
-set :user, "easander"
-set :domain, "recstache.com"
-set :project, "recstache"
-set :application, "recstache.com"
-set :applicationdir, "/home/#{user}/#{application}"
-
-set :repository,  "git@github.com:chicohernando/recstache"
-set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-set :deploy_to, applicationdir
-set :deploy_via, :remote_cache
-set :git_enable_submodules, 1
-set :branch, 'master'
-set :git_shallow_clone, 1
-set :scm_verbose, true
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-
 default_run_options[:pty] = true
-set :chmod755, "app config db lib public vendor script script/* public/disp*"
-set :use_sudo, false
 
-role :web, domain                          # Your HTTP server, Apache/etc
-role :app, domain                          # This may be the same as your `Web` server
-role :db,  domain, :primary => true # This is where Rails migrations will run
+set :application, "recstache.com"
+set :scm, :git
+set :scm_verbose, true
+set :repository,  "git@github.com:chicohernando/recstache.git"
+set :user, "deploy"
+set :use_sudo, false
+set :deploy_to, '/var/www'
+set :deploy_via, :remote_cache
+set :rails_env, "production"
+set :keep_releases, 5
+
+# Add RVM's lib directory to the load path.
+$:.unshift(File.expand_path('./lib', '/usr/share/ruby-rvm'))
+set :rvm_ruby_string, '1.9.3-p194'
+set :rvm_type, :system
+
+role :web, 'recstache.com'                          # Your HTTP server, Apache/etc
+role :app, 'recstache.com'                          # This may be the same as your `Web` server
+role :db,  'recstache.com', :primary => true # This is where Rails migrations will run
 #role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
 
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
