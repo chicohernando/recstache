@@ -6,10 +6,15 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'rails_admin'
 
 group :development do
   gem 'capistrano'
   gem 'thin'
+end
+
+group :production do
+  gem 'therubyracer'
 end
 
 # Gems used only for assets and not required
@@ -28,3 +33,5 @@ gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
+
+gem "devise"

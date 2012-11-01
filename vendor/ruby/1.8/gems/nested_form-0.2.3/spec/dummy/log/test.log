@@ -1,0 +1,743 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:15:12 +0300
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:15:47 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 16ms
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to InitialTables (20110710143903)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "name" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "milestones" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "task_id" integer, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110710143903')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("milestones")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("projects")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tasks")
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:16:09 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 19ms
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:16:34 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:17:02 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 15ms
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:17:11 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:17:43 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:17:44 +0300
+Compiled jquery.js  (27ms)  (pid 22082)
+Served asset /jquery.js - 200 OK (45ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:17:44 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 22082)
+Served asset /jquery_nested_form.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:17:44 +0300
+Compiled jquery_events_test.js  (0ms)  (pid 22082)
+Served asset /jquery_events_test.js - 200 OK (12ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:19:13 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:19:13 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:19:13 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:19:13 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 22313)
+Served asset /jquery_nested_form.js - 200 OK (8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:20:18 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:20:18 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:20:18 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 22366)
+Served asset /jquery_nested_form.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:20:18 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:20:27 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:20:27 +0300
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:20:27 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:20:27 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:39:59 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:39:59 +0300
+Compiled jquery.js  (2ms)  (pid 24503)
+Served asset /jquery.js - 200 OK (14ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:39:59 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 24503)
+Served asset /jquery_nested_form.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:39:59 +0300
+Compiled jquery_events_test.js  (0ms)  (pid 24503)
+Served asset /jquery_events_test.js - 200 OK (6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:40:17 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:40:17 +0300
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:40:17 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:40:17 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:41:17 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:41:17 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:41:17 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 24645)
+Served asset /jquery_nested_form.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:41:17 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:41:49 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:41:49 +0300
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:41:49 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 24686)
+Served asset /jquery_nested_form.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:41:49 +0300
+Served asset /jquery_events_test.js - 200 OK (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:42:08 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:42:08 +0300
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:42:08 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:42:08 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:42:32 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:42:32 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:42:32 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:42:32 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:42:48 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:42:48 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:42:48 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:42:48 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:43:04 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:43:05 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:43:05 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:43:05 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:45:14 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:45:14 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:45:14 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:45:14 +0300
+Served asset /jquery_events_test.js - 200 OK (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:45:29 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 151ms (Views: 148.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:45:29 +0300
+Served asset /jquery_nested_form.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:45:29 +0300
+Served asset /jquery_events_test.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:45:29 +0300
+Served asset /jquery.js - 200 OK (30ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 22:45:57 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-21 22:45:57 +0300
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-21 22:45:57 +0300
+Compiled jquery_nested_form.js  (0ms)  (pid 24986)
+Served asset /jquery_nested_form.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-21 22:45:57 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to InitialTables (20110710143903)
+Migrating to AddAssociationWithClassName (20120819164528)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "project_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "name" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120819164528')[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("milestones")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("project_tasks")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("projects")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tasks")
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to InitialTables (20110710143903)
+Migrating to AddAssociationWithClassName (20120819164528)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("milestones")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("project_tasks")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("projects")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tasks")[0m
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:31:13 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:31:14 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:31:16 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:31:16 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:31:19 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:31:19 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:31:22 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:31:22 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:31:24 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:31:25 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 23:31:26 +0300
+  Processing by ProjectsController#without_intermediate_inputs as HTML
+Rendered projects/without_intermediate_inputs.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=jquery" for 127.0.0.1 at 2012-08-21 23:31:26 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"jquery"}
+Rendered projects/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:40:06 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:40:07 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:40:09 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:40:09 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:40:12 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:40:12 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:40:14 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:40:15 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-21 23:40:17 +0300
+  Processing by ProjectsController#new as HTML
+Rendered projects/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-21 23:40:18 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+Rendered projects/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-21 23:40:18 +0300
+  Processing by ProjectsController#without_intermediate_inputs as HTML
+Rendered projects/without_intermediate_inputs.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=jquery" for 127.0.0.1 at 2012-08-21 23:40:19 +0300
+  Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"jquery"}
+Rendered projects/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 23 21:59:39 +0300 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 91ms (Views: 87.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at Thu Aug 23 21:59:39 +0300 2012
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at Thu Aug 23 21:59:39 +0300 2012
+Served asset /jquery_nested_form.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at Thu Aug 23 21:59:39 +0300 2012
+Served asset /jquery_events_test.js - 200 OK (3ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 23 21:59:40 +0300 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 23 21:59:42 +0300 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 23 21:59:42 +0300 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at Thu Aug 23 21:59:45 +0300 2012
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prototype.js" for 127.0.0.1 at Thu Aug 23 21:59:45 +0300 2012
+Compiled prototype.js  (3ms)  (pid 13671)
+Served asset /prototype.js - 200 OK (18ms)
+
+
+Started GET "/assets/prototype_events_test.js" for 127.0.0.1 at Thu Aug 23 21:59:45 +0300 2012
+Compiled prototype_events_test.js  (0ms)  (pid 13671)
+Served asset /prototype_events_test.js - 200 OK (55ms)
+
+
+Started GET "/assets/prototype_nested_form.js" for 127.0.0.1 at Thu Aug 23 21:59:45 +0300 2012
+Compiled prototype_nested_form.js  (0ms)  (pid 13671)
+Served asset /prototype_nested_form.js - 200 OK (11ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at Thu Aug 23 21:59:45 +0300 2012
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at Thu Aug 23 21:59:47 +0300 2012
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at Thu Aug 23 21:59:48 +0300 2012
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 23 21:59:50 +0300 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at Thu Aug 23 21:59:51 +0300 2012
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at Thu Aug 23 21:59:51 +0300 2012
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=jquery" for 127.0.0.1 at Thu Aug 23 21:59:52 +0300 2012
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"jquery"}
+  Rendered projects/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-23 22:00:26 +0300
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-23 22:00:26 +0300
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_nested_form.js" for 127.0.0.1 at 2012-08-23 22:00:26 +0300
+Served asset /jquery_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_events_test.js" for 127.0.0.1 at 2012-08-23 22:00:26 +0300
+Served asset /jquery_events_test.js - 200 OK (2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-23 22:00:26 +0300
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-23 22:00:28 +0300
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-23 22:00:28 +0300
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-23 22:00:31 +0300
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prototype.js" for 127.0.0.1 at 2012-08-23 22:00:31 +0300
+Served asset /prototype.js - 200 OK (7ms)
+
+
+Started GET "/assets/prototype_nested_form.js" for 127.0.0.1 at 2012-08-23 22:00:31 +0300
+Served asset /prototype_nested_form.js - 200 OK (2ms)
+
+
+Started GET "/assets/prototype_events_test.js" for 127.0.0.1 at 2012-08-23 22:00:31 +0300
+Served asset /prototype_events_test.js - 200 OK (2ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-23 22:00:31 +0300
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-23 22:00:34 +0300
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-23 22:00:34 +0300
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2012-08-23 22:00:36 +0300
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=prototype" for 127.0.0.1 at 2012-08-23 22:00:37 +0300
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"prototype"}
+  Rendered projects/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/without_intermediate_inputs" for 127.0.0.1 at 2012-08-23 22:00:37 +0300
+Processing by ProjectsController#without_intermediate_inputs as HTML
+  Rendered projects/without_intermediate_inputs.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new?type=jquery" for 127.0.0.1 at 2012-08-23 22:00:38 +0300
+Processing by ProjectsController#new as HTML
+  Parameters: {"type"=>"jquery"}
+  Rendered projects/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)

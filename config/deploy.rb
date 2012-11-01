@@ -5,6 +5,9 @@ set :default_environment, {
     'PATH' => "/home/easander/.gems/bin:/usr/lib/ruby/gems/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games"
 }
 
+ssh_options[:forward_agent] = true
+set :ssh_options, { :forward_agent => true }
+
 set :user, "easander"
 set :domain, "recstache.com"
 set :project, "recstache"
