@@ -6,15 +6,13 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'fastercsv'
 gem 'rails_admin'
+gem 'therubyracer'
 
 group :development do
   gem 'capistrano'
   gem 'thin'
-end
-
-group :production do
-  gem 'therubyracer'
 end
 
 # Gems used only for assets and not required
