@@ -47,6 +47,9 @@ Recstache::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
+  config.assets.precompile << /^(?!rails_admin|jquery|partials)(?:.+\/)?(?!_)([^\/]*).s?css$/
+  config.assets.precompile << /^(?!rails_admin|jquery|partials)(?:.+\/)?(?!_)([^\/]*).js$/
+  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
