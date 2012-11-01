@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RECSTACHE</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <link rel="stylesheet" type="text/css" href="/assets/foundation.css">
+    <link rel="stylesheet" type="text/css" href="/assets/mostyle.css">
+
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Adamina|Alegreya:400,700|Alegreya+SC:700' rel='stylesheet' type='text/css' />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Latest version of jQuery, customized for Foundation -->
+    <script src="assets/jquery.js"></script>
+    <script src="assets/foundation.min.js"></script>
+    <script src="assets/app.js"></script>
+  </head>
+  <body>
+    <div class="contain-to-grid logo-holder">
+      <div class="row">
+        <div class="five columns centered header">
+          <img src="/assets/logo2.png" />
+        </div>
+      </div>
+    </div>
+
+    <section id="content">
+      <div id="intro">
+        <div class="row">
+          <h2 class="twelve columns">Welcome</h2>
+          <div class="six columns description">
+            <p>Bacon ipsum dolor sit amet turducken swine bresaola kielbasa. Biltong kielbasa fatback tri-tip andouille turkey, doner boudin. Ball tip pork chop rump tri-tip meatball spare ribs. Salami pork loin tri-tip hamburger jowl andouille pork jerky tongue shankle. Ham hock cow frankfurter jowl fatback beef ribs. Tail leberkas biltong chicken doner shankle pork rump, ribeye pancetta ham hock pig.</p>
+            <p>Pig sausage flank meatloaf ham hock t-bone ham bresaola ball tip strip steak beef ribs bacon pork loin. Biltong jerky chuck t-bone. Filet mignon t-bone venison, beef pancetta shoulder turducken jerky meatball tail prosciutto. Corned beef bresaola t-bone shankle sirloin tenderloin shank salami shoulder jerky kielbasa drumstick pork turkey. Bacon doner t-bone, andouille pork chop fatback ham hock capicola swine jerky. Bacon andouille shoulder cow strip steak shank, turkey pancetta filet mignon.</p>
+          </div>
+          <div class="six columns facebook-module">
+            <p>Facebook module can go here.</p>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="twelve columns">Want to sponsor us?</h2>
+          <div class="twelve columns description">
+            <p>
+              Head over to the <%= link_to 'RECSOLU Movember Donate', 'http://bit.ly/RECSTACHE', :target => '_blank' %> page and fill out the secure donation form.  Once complete we will contact you for your logo and link to appear on our site. We will put the sponsors in order of highest to lowest donation, but seriously, anything helps and will get you on our sponsor list.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="contestants">
+        <div class="row">
+        <h2 class="twelve columns">Your Contestants</h2>
+        <h3 class="twelve columns">Before Movember</h3>
+        <div class="six columns before">
+          <ul class="block-grid two-up mobile-two-up">
+            <li>
+              <img src="http://placehold.it/250/E5E5E5/FFFFFF">
+              <span>Meatloaf Ham</span>
+            </li>
+            <li>
+              <img src="http://placehold.it/250/b1de86/FFFFFF">
+              <span>Meatloaf Ham</span>
+            </li>
+            <li>
+              <img src="http://placehold.it/250/b1de86/FFFFFF">
+              <span>Meatloaf Ham</span>
+            </li>
+            <li>
+              <img src="http://placehold.it/250/E5E5E5/FFFFFF">
+              <span>Meatloaf Ham</span>
+            </li>
+            <li>
+              <img src="http://placehold.it/250/E5E5E5/FFFFFF">
+              <span>Meatloaf Ham</span>
+            </li>
+            <li>
+              <img src="http://placehold.it/250/b1de86/FFFFFF">
+              <span>Meatloaf Ham</span>
+            </li>
+          </ul>
+        </div>
+        <div class="six columns leaderboard">
+          <table class="twelve">
+            <thead>
+              <tr>
+                <th>
+                  Contestant
+                </th>
+                <th>
+                  Raised
+                </th>
+              </tr>
+            </thead>
+            <% @users.each do |user| %>
+              <tr>
+                <td>
+                  <%= user.name -%>
+                </td>
+                <td> 
+                  <%= number_to_currency(user.raised, :unit => "$") -%>
+                </td>  
+              </tr>
+            <% end -%>
+          </table>
+        </div> <!--.leaderboard-->
+        </div>
+      </div> <!--.contestants-->
+      <div id="pictures">
+        <div class="row">
+          <div class="twelve columns other-pictures">
+            <h2>More Photos</h2>
+          </div>
+        </div>
+      </div><!--.pictures-->
+
+    </section>
+
+    <footer id="footstache">
+      <div id="footer">
+        <div class="row">
+          <div class="twelve columns" id="footer-text">
+            <img src="/assets/m-footer.png"> 2012. Design by <a href="http://niedererer.com/" target="_blank">Carissa Niederer</a> <img src="/assets/m-footer2.png">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
