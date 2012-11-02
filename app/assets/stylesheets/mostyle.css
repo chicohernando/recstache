@@ -44,8 +44,12 @@ h3 {
   color: #FFFFFF;
 }
 
-#intro h1, #intro h2, #intro h3, #intro a {
-  color: #FFFFFF;
+#intro h1, #intro h2, #intro h3 {
+  color: #FFF;
+}
+
+#intro a {
+  color: #000;
 }
 
 .facebook-module {
