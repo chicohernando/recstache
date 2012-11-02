@@ -48,6 +48,11 @@ h3 {
   color: #FFFFFF;
 }
 
+.facebook-module {
+  background-color: #FFF;
+  padding: 0;
+}
+
 /* -------------------------------- Your Contestants -------------------------------- */
 
 #contestants {
