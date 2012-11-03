@@ -6,9 +6,11 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem "devise"
 gem 'fastercsv'
 gem 'rails_admin'
 gem 'therubyracer'
+gem 'paperclip', '~> 3.0'
 
 group :development do
   gem 'capistrano'
@@ -31,5 +33,3 @@ gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
-gem "devise"

@@ -36,4 +36,7 @@ Recstache::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #folder that contains the convert (imagemagick) command
+  Paperclip.options[:command_path] = "/usr/local/bin"
 end

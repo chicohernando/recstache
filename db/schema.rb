@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121101055053) do
+ActiveRecord::Schema.define(:version => 20121103031431) do
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(:version => 20121101055053) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "user_images", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
+
+  add_index "user_images", ["user_id"], :name => "index_user_images_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"

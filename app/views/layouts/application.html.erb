@@ -41,6 +41,7 @@
     </script>
   </head>
   <body>
+    <%= yield %>
     <div id="fb-root"></div>
     <script>
       (function(d, s, id) {
@@ -85,33 +86,16 @@
       <div id="contestants">
         <div class="row">
         <h2 class="twelve columns">Your Contestants</h2>
-        <h3 class="twelve columns">Before Movember</h3>
+        <h3 class="twelve columns">Loving Movember</h3>
         <div class="six columns before">
           <ul class="block-grid two-up mobile-two-up">
-            <li>
-              <img src="http://placehold.it/250/E5E5E5/FFFFFF">
-              <span>Meatloaf Ham</span>
-            </li>
-            <li>
-              <img src="http://placehold.it/250/b1de86/FFFFFF">
-              <span>Meatloaf Ham</span>
-            </li>
-            <li>
-              <img src="http://placehold.it/250/b1de86/FFFFFF">
-              <span>Meatloaf Ham</span>
-            </li>
-            <li>
-              <img src="http://placehold.it/250/E5E5E5/FFFFFF">
-              <span>Meatloaf Ham</span>
-            </li>
-            <li>
-              <img src="http://placehold.it/250/E5E5E5/FFFFFF">
-              <span>Meatloaf Ham</span>
-            </li>
-            <li>
-              <img src="http://placehold.it/250/b1de86/FFFFFF">
-              <span>Meatloaf Ham</span>
-            </li>
+            <% @users.each do |user| %>
+              <% next if user.user_images.empty? %>
+              <li>
+                <img src="<%= user.user_images.first.photo(:large) %>" />
+                <span><%= user.name %></span>
+              </li>
+            <% end -%>
           </ul>
         </div>
         <div class="six columns leaderboard">
@@ -144,6 +128,10 @@
         <div class="row">
           <div class="twelve columns other-pictures">
             <h2>More Photos</h2>
+            <p>
+              Check out <%= link_to "Movember Team RECSOLU", "http://bit.ly/RECSTACHE", :target => "_blank" %> on day two of Movmember!
+              <img src="/images/team_recsolu.jpg" alt="Team Recsolu Movember" />
+            </p>
           </div>
         </div>
       </div><!--.pictures-->
