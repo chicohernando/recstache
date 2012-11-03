@@ -54,7 +54,7 @@ namespace :uploads do
   end
 
   task :register_dirs do
-    set :uploads_dirs,    %w(system system/user_images)
+    set :uploads_dirs,    %w(system)
     set :shared_children, fetch(:shared_children) + fetch(:uploads_dirs)
   end
 

@@ -95,7 +95,7 @@
                 <img src="<%= user.user_images.first.photo(:large) %>" />
                 <span><%= user.name %></span>
               </li>
-            <% end -%>
+            <% end unless @users.blank? -%>
           </ul>
         </div>
         <div class="six columns leaderboard">
