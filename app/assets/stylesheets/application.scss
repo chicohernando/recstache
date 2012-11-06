@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ * require_tree .
+ */
+
+@import "foundation_and_overrides";
+@import "foundation";
+
+/* -------------------------------- Typography -------------------------------- */
+
+h3 {
+  color: $secondaryColor;
+}
+
+/* -------------------------------- Header -------------------------------- */
+
+.header {
+  padding: 30px 0 15px;
+}
+
+/* -------------------------------- Intro -------------------------------- */
+
+.logo-holder, #intro {
+  background: url('/assets/greenstache2.png');
+}
+
+#intro, #contestants, #pictures {
+  padding: 30px 0;
+  min-height: 500px;
+}
+
+#intro {
+  color: $white;
+  h1, h2, h3 {
+    color: $white;
+  } // h1 h2 h3
+  a {
+    color: $black;
+  } // a
+} // intro
+
+.facebook-module {
+  background-color: #FFF;
+  padding: 0;
+}
+
+/* -------------------------------- Your Contestants -------------------------------- */
+
+#contestants {
+  background: url('/assets/cafe.png');
+  border-top: 5px solid lighten($mainColor, 30%);
+}
+
+#contestants .before > .block-grid.two-up > li > span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* -------------------------------- More Photos -------------------------------- */
+
+#pictures {
+  background: url('/assets/bg2.png');
+  border-top: 5px solid lighten($mainColor, 30%);
+}
+
+/* -------------------------------- Footer -------------------------------- */
+
+#footer {
+  background-color: #3c2a44;
+  color: $white;
+  min-height: 30px;
+  padding: 10px 0;
+  a {
+    color: #F5F5F5;
+    font-weight: 600;
+    &:hover {
+      color: #b1de86;
+      text-decoration: underline;
+    } // hover
+  } // a
+  .row {
+    #footer-text {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      text-align: center;
+    } // footer-text
+  } // row
+} // footer
