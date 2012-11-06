@@ -93,7 +93,7 @@
               <% next if user.user_images.empty? %>
               <li>
                 <img src="<%= user.user_images.first.photo(:large) %>" />
-                <span><%= user.name %></span>
+                <span><%= user.url.blank? ? user.name : (link_to user.name, user.url, :target => "_blank") -%></span>
               </li>
             <% end unless @users.blank? -%>
           </ul>
@@ -113,7 +113,7 @@
             <% @users.each do |user| %>
               <tr>
                 <td>
-                  <%= user.name -%>
+                  <%= user.url.blank? ? user.name : (link_to user.name, user.url, :target => "_blank") -%>
                 </td>
                 <td> 
                   <%= number_to_currency(user.raised, :unit => "$") -%>
