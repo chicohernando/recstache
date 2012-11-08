@@ -90,7 +90,7 @@
             <% @users.each do |user| %>
               <% next if user.user_images.empty? %>
               <li>
-                <img src="<%= user.user_images.first.photo(:large) %>" />
+                <img src="<%= user.user_images.last.photo(:large) %>" />
                 <span><%= user.url.blank? ? user.name : (link_to user.name, user.url, :target => "_blank") -%></span>
               </li>
             <% end unless @users.blank? -%>
