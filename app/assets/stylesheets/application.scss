@@ -20,11 +20,13 @@
 h3 {
   color: $secondaryColor;
 }
-
-/* -------------------------------- Header -------------------------------- */
-
-.header {
-  padding: 30px 0 15px;
+a {
+  font-size: 20px;
+  font-family: $headerFontFamily;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* -------------------------------- Intro -------------------------------- */
@@ -41,10 +43,11 @@ h3 {
     color: $white;
   } // h1 h2 h3
   a {
-    color: $black;
+    color: $white;
   } // a
   img.logo {
     display: block;
+    padding: 20px 0 30px;
   }
 } // intro
 
