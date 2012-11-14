@@ -8,7 +8,7 @@
 
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-    
+
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" href="favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Adamina|Alegreya:400,700|Alegreya+SC:700' rel='stylesheet' type='text/css' />
@@ -51,17 +51,10 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <div class="contain-to-grid logo-holder">
-      <div class="row">
-        <div class="five columns centered header">
-          <img src="/assets/logo2.png" />
-        </div>
-      </div>
-    </div>
-
     <section id="content">
       <div id="intro">
         <div class="row">
+          <img src="/assets/logo2.png" class="five columns centered logo" />
           <h2 class="twelve columns">Welcome</h2>
           <div class="six columns description">
             <p>
@@ -113,9 +106,9 @@
                 <td>
                   <%= user.url.blank? ? user.name : (link_to user.name, user.url, :target => "_blank") -%>
                 </td>
-                <td> 
+                <td>
                   <%= number_to_currency(user.raised, :unit => "$") -%>
-                </td>  
+                </td>
               </tr>
             <% end if defined? @users -%>
           </table>

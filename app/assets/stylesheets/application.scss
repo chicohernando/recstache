@@ -29,16 +29,13 @@ h3 {
 
 /* -------------------------------- Intro -------------------------------- */
 
-.logo-holder, #intro {
-  background: url('/assets/greenstache2.png');
-}
-
 #intro, #contestants, #pictures {
   padding: 30px 0;
   min-height: 500px;
 }
 
 #intro {
+  background: url('/assets/greenstache2.png');
   color: $white;
   h1, h2, h3 {
     color: $white;
@@ -46,10 +43,13 @@ h3 {
   a {
     color: $black;
   } // a
+  img.logo {
+    display: block;
+  }
 } // intro
 
 .facebook-module {
-  background-color: #FFF;
+  background-color: $white;
   padding: 0;
 }
 
